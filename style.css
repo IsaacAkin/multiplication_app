@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    /*Removes space around the body*/
+    display: flex;
+    /*Allows you to move items to specific points on the page*/
+    justify-content: center;
+    /*Determines the specific point that you want to move the items to*/
+    height: 100vh;
+    /*size is same as screen size*/
+    align-items: center;
+    /*Brings items to the ceter vertically*/
+    text-align: center;
+    background-color: aliceblue;
+    font-family: sans-serif;
+}
+
+.form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.4rem 0.3rem rgba(0, 0, 0, .3);
+    margin: 3rem;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0.3rem;
+    border: solid 0.1rem;
+
+}
+
+/*input pseudo class*/
+.input::placeholder {
+    color: grey;
+    font-family: sans-serif;
+}
+
+.btn {
+    background-color: grey;
+    display: block;
+    border: none;
+    width: 100%;
+    padding: 2%;
+    font-size: 1rem;
+    font-family: sans-serif;
+    margin: 4% 0;
+    border-radius: 0.3rem;
+    box-shadow: 0 0.6rem 0.7rem rgba(0, 0, 0, .3);
+    cursor: pointer;
+    /*So you can see a pointer hand when you hover over the button*/
+}
+
+/*btn pseudo class*/
+.btn:hover {
+    filter: brightness(0.9);
+    /*Makes button dimmer when you hover over it*/
+}
+
+.score {
+    text-align: right;
+}
